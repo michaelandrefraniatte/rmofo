@@ -13,28 +13,22 @@ namespace rmofo
         static void Main(string[] args)
         {
             string rootPath = System.Windows.Forms.Application.StartupPath; 
-            string[] fileNames = Directory.GetFiles(rootPath);
-            foreach (string fileName in fileNames)
-            {
-                Console.WriteLine(fileName);
-                UnblockFiles(fileName);
-                Console.WriteLine("done");
-            }
+            Console.WriteLine(rootPath);
+            ProtectFiles(rootPath);
+            ProtectDirs(rootPath);
+            Console.WriteLine("done");
             string[] dirs = Directory.GetDirectories(rootPath, "*", SearchOption.AllDirectories);
             foreach (string dir in dirs)
             {
-                string[] files = Directory.GetFiles(dir);
-                foreach (string file in files)
-                {
-                    Console.WriteLine(file);
-                    UnblockFiles(file);
-                    Console.WriteLine("done");
-                }
+                Console.WriteLine(dir);
+                ProtectFiles(dir);
+                ProtectDirs(dir);
+                Console.WriteLine("done");
             }
         }
-        public static void UnblockFiles(string fileName)
+        public static void ProtectFiles(string dirName)
         {
-            if (!Directory.Exists(fileName))
+            if (!Directory.Exists(dirName))
             {
                 return;
             }
@@ -42,7 +36,24 @@ namespace rmofo
             {
                 FileName = "powershell.exe",
                 RedirectStandardOutput = true,
-                Arguments = $"attrib +S '{fileName}' /d /s",
+                Arguments = $"attrib +S '{dirName}' /s",
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
+            var process = Process.Start(start);
+            process.WaitForExit();
+        }
+        public static void ProtectDirs(string dirName)
+        {
+            if (!Directory.Exists(dirName))
+            {
+                return;
+            }
+            var start = new ProcessStartInfo
+            {
+                FileName = "powershell.exe",
+                RedirectStandardOutput = true,
+                Arguments = $"attrib +S '{dirName}' /d",
                 CreateNoWindow = true,
                 UseShellExecute = false
             };
