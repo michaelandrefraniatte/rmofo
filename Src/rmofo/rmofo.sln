@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rmofo", "rmofo\rmofo.csproj", "{6106A2AD-EB71-4256-9657-93897042D9AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6106A2AD-EB71-4256-9657-93897042D9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6106A2AD-EB71-4256-9657-93897042D9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6106A2AD-EB71-4256-9657-93897042D9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6106A2AD-EB71-4256-9657-93897042D9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22521E9A-147E-4385-95D9-B691773A8245}
+	EndGlobalSection
+EndGlobal

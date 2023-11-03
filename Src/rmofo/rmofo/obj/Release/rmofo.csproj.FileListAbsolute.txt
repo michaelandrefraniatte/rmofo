@@ -1,0 +1,8 @@
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\bin\Release\rmofo.exe.config
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\bin\Release\rmofo.exe
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\bin\Release\rmofo.pdb
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\obj\Release\rmofo.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\obj\Release\rmofo.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\obj\Release\rmofo.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\obj\Release\rmofo.exe
+C:\Users\micha\Documents\github\rmofo\Src\rmofo\rmofo\obj\Release\rmofo.pdb
